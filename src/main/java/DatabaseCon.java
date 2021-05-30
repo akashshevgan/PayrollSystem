@@ -18,12 +18,4 @@ public class DatabaseCon {
             e.printStackTrace();
         }
     }
-
-    private static void listDrivers(){
-        Enumeration<Driver> driverList = DriverManager.getDrivers();
-        while (driverList.hasMoreElements()) {
-            Driver driverClass =  (Driver) driverList.nextElement();
-            System.out.println(" "+driverClass.getClass().getName());
-        }
-    }
 }
